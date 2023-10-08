@@ -8,77 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let Learners : [Learner] =
+        [Learner(firstName: "Nada", lastName: "Al Qahtani", major: "Computer Science", age: 23) ,
+        Learner(firstName: "Dalal", lastName: "Al Harbi", major: "Physics", age: 24),
+        Learner(firstName: "Shaden", lastName: "Al Otaibi", major: "Computer Biology", age: 21)]
+    
     var body: some View {
         List {
-           
-            //Learner 1
-            HStack{
-                Image("avatar\(Int.random(in: 1..<7))")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 64, height: 64)
-                    .clipShape(Circle())
-                    .padding(.vertical)
-                    .padding(.horizontal, 2)
+            
+            
+            ForEach(Learners) { learner in
                 
-                VStack(alignment: .leading, spacing:6){
-                    Text("Nada Al Qahtani")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    
-                    Text("Computer Science")
-                    Text("\((18..<60).randomElement()!) years old")
-
+                HStack {
+                    Image("avatar\(Int.random(in: 1..<7))")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 64, height: 64)
+                        .clipShape(Circle())
+                        .padding(.vertical)
+                        .padding(.horizontal, 2)
+                    VStack (alignment: .leading) {
+                        Text("\(learner.firstName) \(learner.lastName)")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                        
+                        Text("\(learner.major)")
+                        Text("\(learner.age).randomElement()!) years old")
+                    }
                 }
-                .padding(6)
             }
-            
-            //Learner 2
-            HStack{
-                Image("avatar\(Int.random(in: 1..<7))")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 64, height: 64)
-                    .clipShape(Circle())
-                    .padding(.vertical)
-                    .padding(.horizontal, 2)
-                
-                VStack(alignment: .leading, spacing:6){
-                    Text("Dalal Al Harbi")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    
-                    Text("Physics")
-                    Text("\((18..<60).randomElement()!) years old")
-
-                }
-                .padding(6)
-            }
-            
-            
-            
-            //Learner 3
-            HStack{
-                Image("avatar\(Int.random(in: 1..<7))")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 64, height: 64)
-                    .clipShape(Circle())
-                    .padding(.vertical)
-                    .padding(.horizontal, 2)
-                
-                VStack(alignment: .leading, spacing:6){
-                    Text("Shaden Al Otaibi")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    
-                    Text("Biology")
-                    Text("\((18..<60).randomElement()!) years old")
-
-                }
-                .padding(6)
-            }
-            
             
         }
         .padding()
@@ -91,6 +50,15 @@ struct ContentView: View {
     ContentView()
 }
 
+
+struct Learner : Identifiable {
+    let id = UUID()
+    let firstName : String
+    let lastName : String
+    let major : String
+    let age : Int
+    
+}
 
 
 
