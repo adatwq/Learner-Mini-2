@@ -35,7 +35,7 @@ struct ContentView: View {
                             Text("\(learner.age) years old")
 
                         }
-                        .padding(6)
+                        .padding(8)
                     }
                 }
             }
