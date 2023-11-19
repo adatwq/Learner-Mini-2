@@ -35,7 +35,10 @@ class ViewModel: ObservableObject{
             }
         }
         
-        CKContainer.default().publicCloudDatabase.add(operation)
+        CKContainer(identifier: "iCloud.com.ADATWQ.LearnerApp-Mini2").publicCloudDatabase.add(operation)
+        
+        
+        
     }
     
     func addLearner(){
@@ -44,7 +47,10 @@ class ViewModel: ObservableObject{
         record["lastName"] = "Ahmed"
         record["major"] = "Art"
         record["age"] = 23
-        CKContainer.default().publicCloudDatabase.save(record) { record, error in
+        
+       
+        
+        CKContainer(identifier: "iCloud.com.ADATWQ.LearnerApp-Mini2").publicCloudDatabase.save(record) { record, error in
             guard  error  == nil else{
                 print(error?.localizedDescription ?? "an unknown error occurred")
                 return
