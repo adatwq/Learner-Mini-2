@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6418EFC42B0A0684008FBECA /* LearnerApp-Mini2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LearnerApp-Mini2.entitlements"; sourceTree = "<group>"; };
 		6432612F2AD2A1B800070B30 /* LearnerApp-Mini2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearnerApp-Mini2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		643261322AD2A1B800070B30 /* LearnerApp_Mini2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerApp_Mini2App.swift; sourceTree = "<group>"; };
 		643261342AD2A1B800070B30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		643261312AD2A1B800070B30 /* LearnerApp-Mini2 */ = {
 			isa = PBXGroup;
 			children = (
+				6418EFC42B0A0684008FBECA /* LearnerApp-Mini2.entitlements */,
 				643261322AD2A1B800070B30 /* LearnerApp_Mini2App.swift */,
 				643261342AD2A1B800070B30 /* ContentView.swift */,
 				643261362AD2A1B900070B30 /* Assets.xcassets */,
@@ -269,6 +271,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LearnerApp-Mini2/LearnerApp-Mini2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnerApp-Mini2/Preview Content\"";
@@ -280,6 +283,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LearnerApp-Mini2/LearnerApp-Mini2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnerApp-Mini2/Preview Content\"";
@@ -309,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
