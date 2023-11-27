@@ -31,7 +31,7 @@ struct ContentView: View {
                                 .fontWeight(.semibold)
                             
                             Text("\(learner.major)")
-                            Text("\(learner.age).randomElement()!) years old")
+                            Text("\(learner.age) years old")
                         }
                     }
                 }
