@@ -1,18 +1,18 @@
 //
-//  ContentView.swift
-//  LearnerApp-Mini2
+//  UsersView.swift
+//  AutoAuthInCloudKit
 //
-//  Created by Reem Quhal on 08/10/2023.
+//  Created by Khawlah Khalid on 29/10/2023.
 //
 
 import SwiftUI
 import CloudKit
-struct ContentView: View {
-    
-   
+struct LearnersView: View {
+
+
     @StateObject var viewModel = ViewModel()
-    
-    
+
+
     var body: some View {
         NavigationStack{
             List{
@@ -25,12 +25,12 @@ struct ContentView: View {
                             .clipShape(Circle())
                             .padding(.vertical)
                             .padding(.horizontal, 2)
-                        
+
                         VStack(alignment: .leading, spacing:6){
                             Text("\(learner.firstName) \(learner.lastName)")
                                 .font(.title3)
                                 .fontWeight(.semibold)
-                            
+
                             Text("\(learner.major)")
                             Text("\(learner.age) years old")
 
@@ -47,13 +47,13 @@ struct ContentView: View {
             .navigationTitle("Learners")
         }
     }
-   
 
-    
+
+
 }
 
 #Preview {
-    ContentView()
+    LearnersView()
 }
 
 
