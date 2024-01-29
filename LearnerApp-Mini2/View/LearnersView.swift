@@ -9,9 +9,7 @@ import SwiftUI
 import CloudKit
 struct LearnersView: View {
 
-
-    @StateObject var viewModel = ViewModel()
-
+@StateObject var viewModel = ViewModel()
 
     var body: some View {
         NavigationStack{
@@ -42,7 +40,6 @@ struct LearnersView: View {
             .listStyle(.plain)
             .onAppear{
                 viewModel.fetchLearners()
-               // viewModel.addLearner()
             }
             .navigationTitle("Learners")
         }

@@ -15,6 +15,7 @@
 		DF36BA7B2B14D4FD00820191 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36BA7A2B14D4FD00820191 /* AppTabView.swift */; };
 		DF36BA7D2B14D50D00820191 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36BA7C2B14D50D00820191 /* ProfileView.swift */; };
 		DF36BA7F2B14D51700820191 /* LearnersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36BA7E2B14D51700820191 /* LearnersView.swift */; };
+		DF9FE8042B67E8AC00F3CCAB /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FE8032B67E8AC00F3CCAB /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DF36BA7A2B14D4FD00820191 /* AppTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		DF36BA7C2B14D50D00820191 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DF36BA7E2B14D51700820191 /* LearnersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnersView.swift; sourceTree = "<group>"; };
+		DF9FE8032B67E8AC00F3CCAB /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				643261432AD2AE8800070B30 /* LearnerViewModel.swift */,
+				DF9FE8032B67E8AC00F3CCAB /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				DF36BA7D2B14D50D00820191 /* ProfileView.swift in Sources */,
 				DF36BA7B2B14D4FD00820191 /* AppTabView.swift in Sources */,
 				DF36BA7F2B14D51700820191 /* LearnersView.swift in Sources */,
+				DF9FE8042B67E8AC00F3CCAB /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnerApp-Mini2/Preview Content\"";
-				DEVELOPMENT_TEAM = G5D25L4VAK;
+				DEVELOPMENT_TEAM = 8R29TH66V6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -329,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ADATWQ.LearnerApp-Mini2";
+				PRODUCT_BUNDLE_IDENTIFIER = "iCloud.Khawlah-Khalid.CloudKit-Workshop-auto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,7 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnerApp-Mini2/Preview Content\"";
-				DEVELOPMENT_TEAM = G5D25L4VAK;
+				DEVELOPMENT_TEAM = 8R29TH66V6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -360,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ADATWQ.LearnerApp-Mini2";
+				PRODUCT_BUNDLE_IDENTIFIER = "iCloud.Khawlah-Khalid.CloudKit-Workshop-auto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

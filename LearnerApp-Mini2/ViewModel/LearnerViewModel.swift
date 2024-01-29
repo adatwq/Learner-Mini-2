@@ -11,16 +11,12 @@ import CloudKit
 
 class ViewModel: ObservableObject{
     @Published var learners : [Learner] = []
-    
+    let container = CKContainer(identifier: "iCloud.Khawlah-Khalid.CloudKit-Workshop")//Change it to your container id
     //1
     func fetchLearners(){
         let predicate = NSPredicate(value: true)
-        //2
-        //let predicate2 = NSPredicate(format: "firstName == %@", "Sara")
-        
         //Record Type depends on what you have named it
-        let query = CKQuery(recordType:"Learner", predicate: predicate)
-        
+        let query = CKQuery(recordType:"Profile", predicate: predicate)
         
         let operation = CKQueryOperation(query: query)
         operation.recordMatchedBlock = { recordId, result in
@@ -35,11 +31,9 @@ class ViewModel: ObservableObject{
             }
         }
         
-        CKContainer(identifier: "iCloud.com.ADATWQ.LearnerApp-Mini2").publicCloudDatabase.add(operation)
-        
-        
-        
+        container.publicCloudDatabase.add(operation)
     }
+    
     
     func addLearner(){
         let record = CKRecord(recordType: "Learner")
@@ -49,8 +43,7 @@ class ViewModel: ObservableObject{
         record["age"] = 23
         
        
-        
-        CKContainer(identifier: "iCloud.com.ADATWQ.LearnerApp-Mini2").publicCloudDatabase.save(record) { record, error in
+        container.publicCloudDatabase.save(record) { record, error in
             guard  error  == nil else{
                 print(error?.localizedDescription ?? "an unknown error occurred")
                 return
